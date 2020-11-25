@@ -1,0 +1,75 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.sergio.villaelisa_mediciones.MainActivity">
+    <item
+        android:id="@+id/action_actualizar"
+        android:orderInCategory="100"
+        android:title="Actualizar"
+        app:showAsAction="never">
+        <menu>
+            <item
+                android:id="@+id/action_actualizar_A"
+                android:orderInCategory="100"
+                android:title="Sector A"
+                app:showAsAction="never"
+                />
+            <item
+                android:id="@+id/action_actualizar_B"
+                android:orderInCategory="100"
+                android:title="Sector B"
+                app:showAsAction="never"
+                />
+            <item
+                android:id="@+id/action_actualizar_C"
+                android:orderInCategory="100"
+                android:title="Sector C"
+                app:showAsAction="never"
+                />
+            <item
+                android:id="@+id/action_actualizar_D"
+                android:orderInCategory="100"
+                android:title="Sector D"
+                app:showAsAction="never"
+                />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/action_cargar"
+        android:orderInCategory="100"
+        android:title="Cargar"
+        app:showAsAction="never">
+        <menu>
+            <item
+                android:id="@+id/action_cargar_A"
+                android:orderInCategory="100"
+                android:title="Sector A"
+                app:showAsAction="never"
+                />
+            <item
+                android:id="@+id/action_cargar_B"
+                android:orderInCategory="100"
+                android:title="Sector B"
+                app:showAsAction="never"
+                />
+            <item
+                android:id="@+id/action_cargar_C"
+                android:orderInCategory="100"
+                android:title="Sector C"
+                app:showAsAction="never"
+                />
+            <item
+                android:id="@+id/action_cargar_D"
+                android:orderInCategory="100"
+                android:title="Sector D"
+                app:showAsAction="never"
+                />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/action_salir"
+        android:orderInCategory="100"
+        android:title="Salir"
+        app:showAsAction="never" />
+
+</menu>

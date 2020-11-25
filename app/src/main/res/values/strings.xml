@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">VillaElisa_Mediciones</string>
+    <string name="action_settings">Settings</string>
+    <string name="ip">http://192.168.1.35/</string>
+    <string name="title_activity_menu_principal">MenuPrincipal</string>
+    <string name="Lorem">Lorem ipsum dolor sit amet</string>
+    <string name="title_activity_sectores">Sectores</string>
+    <string name="title_activity_medir">Medir</string>
+    <string name="title_activity_lista">Lista</string>
+    <string name="title_activity_admin_login">AdminLogin</string>
+    <string name="title_activity_main2">Main2Activity</string>
+</resources>

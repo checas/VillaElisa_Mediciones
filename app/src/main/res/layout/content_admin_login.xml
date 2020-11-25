@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.sergio.villaelisa_mediciones.AdminLogin"
+    tools:showIn="@layout/activity_admin_login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:text="Menu de configuraciones"
+            android:textSize="30sp" />
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="60dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="Ip del server:"
+                android:textSize="25sp"/>
+            <Space
+                android:layout_width="40dp"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/TV_Ip1"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:hint="XXX"
+                android:textSize="23sp"
+                android:gravity="center"
+                android:inputType="number"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="."
+                android:textSize="30sp"/>
+            <EditText
+                android:id="@+id/TV_Ip2"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:hint="XXX"
+                android:textSize="23sp"
+                android:gravity="center"
+                android:inputType="number"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="."
+                android:textSize="30sp"/>
+            <EditText
+                android:id="@+id/TV_Ip3"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:hint="XXX"
+                android:textSize="23sp"
+                android:gravity="center"
+                android:inputType="number"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="."
+                android:textSize="30sp"/>
+            <EditText
+                android:id="@+id/TV_Ip4"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:hint="XXX"
+                android:textSize="23sp"
+                android:gravity="center"
+                android:inputType="number"/>
+
+        </LinearLayout>
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="60dp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="50dp"
+                android:text="Tablet:"
+                android:textSize="25sp"/>
+            <Space
+                android:layout_width="40dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="A"
+                android:textSize="23sp"/>
+            <Space
+                android:layout_width="30dp"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/RB_A"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Space
+                android:layout_width="40dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="B"
+                android:textSize="23sp"/>
+            <Space
+                android:layout_width="30dp"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/RB_B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" />
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="3dp"
+            android:layout_gravity="center"/>
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="30dp" />
+        <Button
+            android:id="@+id/BorrarSubido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Borrar subida"
+            android:textSize="18sp"
+            android:layout_gravity="center"/>
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="30dp" />
+        <Button
+            android:id="@+id/BorrarTabla"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Borrar tabla"
+            android:textSize="18sp"
+            android:layout_gravity="center"/>
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"/>
+        <Button
+            android:id="@+id/B_Backup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Generar Backup"
+            android:textSize="18sp"
+            android:layout_gravity="center"/>
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="30dp" />
+        <Button
+            android:id="@+id/B_Ingresar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ingresar"
+            android:textSize="18sp"
+            android:layout_gravity="center"/>
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="30dp" />
+        <Button
+            android:id="@+id/B_Guardar"
+            android:layout_width="220dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:text="Guardar"
+            android:textSize="25sp"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.sergio.villaelisa_mediciones.MenuPrincipal"
+    tools:showIn="@layout/activity_menu_principal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:id="@+id/TV_Fecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Fecha acutal"
+                android:textSize="30sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <Switch
+                android:id="@+id/cambio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:checked="false"
+                android:text="Sectores"
+                android:visibility="invisible" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutInicio"
+            android:layout_width="match_parent"
+            android:layout_height="560dp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Estado de mediciones:"
+                android:textSize="26sp" />
+
+            <ProgressBar
+                android:id="@+id/PBTotal"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="540dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:progress="0" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <LinearLayout
+                android:id="@+id/LlA"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/TV_A"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="4dp"
+                        android:enabled="false"
+                        android:text="Sector A"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/BtVerA"
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="372dp"
+                        android:enabled="false"
+                        android:text="Mostrar"
+                        android:textSize="12sp" />
+                    <Button
+                        android:id="@+id/BtSubirA"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="372dp"
+                        android:enabled="false"
+                        android:text="Subir"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/PBA"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="540dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:progress="0"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/TV_Aberastain"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="4dp"
+                        android:enabled="false"
+                        android:text="Sector Aberastain"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/BtVerAberastain"
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="288dp"
+                        android:enabled="false"
+                        android:text="Mostrar"
+                        android:textSize="12sp" />
+                    <Button
+                        android:id="@+id/BtSubirAberastain"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="288dp"
+                        android:enabled="false"
+                        android:text="subir"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/PBAberastain"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="540dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:progress="0"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/TV_Jardines"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="4dp"
+                        android:enabled="false"
+                        android:text="Sector Jardines del Sur"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/BtVerJardines"
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="240dp"
+                        android:enabled="false"
+                        android:text="Mostrar"
+                        android:textSize="12sp" />
+                    <Button
+                        android:id="@+id/BtSubirJardines"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="240dp"
+                        android:enabled="false"
+                        android:text="Subir"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/PBJardines"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="540dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:progress="0"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/TV_Medina"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="4dp"
+                        android:enabled="false"
+                        android:text="Sector Medina"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/BtVerMedina"
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="320dp"
+                        android:enabled="false"
+                        android:text="Mostrar"
+                        android:textSize="12sp" />
+                    <Button
+                        android:id="@+id/BtSubirMedina"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="320dp"
+                        android:enabled="false"
+                        android:text="Subir"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/PBMedina"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="540dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:progress="0"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/TV_Salas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="4dp"
+                        android:enabled="false"
+                        android:text="Sector Salas"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/BtVerSalas"
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="338dp"
+                        android:enabled="false"
+                        android:text="Mostrar"
+                        android:textSize="12sp" />
+                    <Button
+                        android:id="@+id/BtSubirSalas"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="338dp"
+                        android:enabled="false"
+                        android:text="Subir"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/PBSalas"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="540dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:progress="0"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/TV_StBarbara"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="4dp"
+                        android:enabled="false"
+                        android:text="Sector Santa Barbara"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/BtVerStBarbara"
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="258dp"
+                        android:enabled="false"
+                        android:text="Mostrar"
+                        android:textSize="12sp" />
+                    <Button
+                        android:id="@+id/BtSubirStBarbara"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="258dp"
+                        android:enabled="false"
+                        android:text="Subir"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/PBStBarbara"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="540dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:progress="0"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/TV_VElisa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="4dp"
+                        android:enabled="false"
+                        android:text="Sector Villa Elisa"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/BtVerVElisa"
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="304dp"
+                        android:enabled="false"
+                        android:text="Mostrar"
+                        android:textSize="12sp" />
+                    <Button
+                        android:id="@+id/BtSubirVElisa"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="304dp"
+                        android:enabled="false"
+                        android:text="Subir"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/PBVElisa"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="540dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:progress="0"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LlB"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/TV_B"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="4dp"
+                        android:enabled="false"
+                        android:text="Sector B"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/BtVerB"
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="372dp"
+                        android:enabled="false"
+                        android:text="Mostrar"
+                        android:textSize="12sp" />
+                    <Button
+                        android:id="@+id/BtSubirB"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="372dp"
+                        android:enabled="false"
+                        android:text="Subir"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/PBB"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="540dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:progress="0"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/TV_C"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="4dp"
+                        android:enabled="false"
+                        android:text="Sector C"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/BtVerC"
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="372dp"
+                        android:enabled="false"
+                        android:text="Mostrar"
+                        android:textSize="12sp" />
+                    <Button
+                        android:id="@+id/BtSubirC"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="372dp"
+                        android:enabled="false"
+                        android:text="Subir"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/PBC"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="540dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:progress="0"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/TV_David"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="4dp"
+                        android:enabled="false"
+                        android:text="Sector David"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/BtVerDavid"
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="336dp"
+                        android:enabled="false"
+                        android:text="Mostrar"
+                        android:textSize="12sp" />
+                    <Button
+                        android:id="@+id/BtSubirDavid"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="336dp"
+                        android:enabled="false"
+                        android:text="Subir"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/PBDavid"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="540dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:progress="0"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/TV_Olmos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="4dp"
+                        android:enabled="false"
+                        android:text="Sector Olmos"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/BtVerOlmos"
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="326dp"
+                        android:enabled="false"
+                        android:text="Mostrar"
+                        android:textSize="12sp" />
+                    <Button
+                        android:id="@+id/BtSubirOlmos"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="326dp"
+                        android:enabled="false"
+                        android:text="Subir"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/PBOlmos"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="540dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:progress="0"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/TV_Zaldivar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="4dp"
+                        android:enabled="false"
+                        android:text="Sector Zaldivar"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/BtVerZaldivar"
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="312dp"
+                        android:enabled="false"
+                        android:text="Mostrar"
+                        android:textSize="12sp" />
+                    <Button
+                        android:id="@+id/BtSubirZaldivar"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="312dp"
+                        android:enabled="false"
+                        android:text="Subir"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/PBZaldivar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="540dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:progress="0"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutSector"
+            android:layout_width="match_parent"
+            android:layout_height="640dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:text="Sectores: "
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="380dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="3dp" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <com.shinelw.library.ColorArcProgressBar
+                android:id="@+id/bar1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="0dp"
+                app:back_color="@android:color/darker_gray"
+                app:back_width="10dp"
+                app:front_color1="@color/colorAccent"
+                app:front_width="10dp"
+                app:is_need_content="true"
+                app:is_need_unit="true"
+                app:max_value="250"
+                app:string_unit="Mediciones"
+                app:total_engle="270" />
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Medir"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/BtDescargar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Descargar sectores"
+            android:textSize="15sp"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/TV_Estado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:text="@string/Lorem"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

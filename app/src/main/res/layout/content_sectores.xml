@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.sergio.villaelisa_mediciones.Sectores"
+    tools:showIn="@layout/activity_sectores">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+            <TextView
+                android:id="@+id/TV_Fecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Fecha acutal"
+                android:textSize="30sp" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layoutInicio"
+            android:layout_width="match_parent"
+            android:layout_height="640dp"
+            android:orientation="vertical"
+            android:visibility="visible">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Estado de sectores:"
+                android:textSize="26sp"
+                android:layout_gravity="center"/>
+            <ProgressBar
+                android:id="@+id/PBTotal"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="540dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:progress="0"/>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="4dp"
+                        android:text="Sector 0"
+                        android:textSize="20sp"
+                        android:enabled="false"/>
+                    <TextView
+                        android:id="@+id/TvD0"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Descargado"
+                        android:textSize="18sp"
+                        android:gravity="left"
+                        android:layout_marginLeft="360dp"/>
+                    <TextView
+                        android:id="@+id/TvN0"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No disponible"
+                        android:textSize="18sp"
+                        android:gravity="left"
+                        android:layout_marginLeft="347dp"/>
+                    <LinearLayout
+                        android:id="@+id/LayoutD0"
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="338dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:text="Descargar"/>
+                        <Space
+                            android:layout_width="10sp"
+                            android:layout_height="wrap_content" />
+                        <CheckBox
+                            android:id="@+id/CBD0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Space
+                   android:layout_width="wrap_content"
+                   android:layout_height="15dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="4dp"
+                        android:text="Sector A"
+                        android:textSize="20sp"
+                        android:enabled="false"/>
+                    <TextView
+                        android:id="@+id/TvDA"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Descargado"
+                        android:textSize="18sp"
+                        android:gravity="left"
+                        android:layout_marginLeft="358dp"/>
+                    <TextView
+                        android:id="@+id/TvNA"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No disponible"
+                        android:textSize="18sp"
+                        android:gravity="left"
+                        android:layout_marginLeft="344dp"/>
+                    <LinearLayout
+                        android:id="@+id/LayoutDA"
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="336dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:text="Descargar"/>
+                        <Space
+                            android:layout_width="10sp"
+                            android:layout_height="wrap_content" />
+                        <CheckBox
+                            android:id="@+id/CBDA"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="4dp"
+                        android:text="Sector Aberastain"
+                        android:textSize="20sp"
+                        android:enabled="false"/>
+                    <TextView
+                        android:id="@+id/TvDAberastain"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Descargado"
+                        android:textSize="18sp"
+                        android:gravity="left"
+                        android:layout_marginLeft="274dp"/>
+                    <TextView
+                        android:id="@+id/TvNAberastain"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No disponible"
+                        android:textSize="18sp"
+                        android:gravity="left"
+                        android:layout_marginLeft="260dp"/>
+                    <LinearLayout
+                        android:id="@+id/LayoutDAberastain"
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="252dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:text="Descargar"/>
+                        <Space
+                            android:layout_width="10sp"
+                            android:layout_height="wrap_content" />
+                        <CheckBox
+                            android:id="@+id/CBDAberastain"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="4dp"
+                        android:text="Sector B"
+                        android:textSize="20sp"
+                        android:enabled="false"/>
+                    <TextView
+                        android:id="@+id/TvDB"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Descargado"
+                        android:textSize="18sp"
+                        android:gravity="left"
+                        android:layout_marginLeft="358dp"/>
+                    <TextView
+                        android:id="@+id/TvNB"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No disponible"
+                        android:textSize="18sp"
+                        android:gravity="left"
+                        android:layout_marginLeft="344dp"/>
+                    <LinearLayout
+                        android:id="@+id/LayoutDB"
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="336dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:text="Descargar"/>
+                        <Space
+                            android:layout_width="10sp"
+                            android:layout_height="wrap_content" />
+                        <CheckBox
+                            android:id="@+id/CBDB"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="4dp"
+                        android:text="Sector C"
+                        android:textSize="20sp"
+                        android:enabled="false"/>
+                    <TextView
+                        android:id="@+id/TvDC"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Descargado"
+                        android:textSize="18sp"
+                        android:gravity="left"
+                        android:layout_marginLeft="358dp"/>
+                    <TextView
+                        android:id="@+id/TvNC"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No disponible"
+                        android:textSize="18sp"
+                        android:gravity="left"
+                        android:layout_marginLeft="344dp"/>
+                    <LinearLayout
+                        android:id="@+id/LayoutDC"
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="336dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:text="Descargar"/>
+                        <Space
+                            android:layout_width="10sp"
+                            android:layout_height="wrap_content" />
+                        <CheckBox
+                            android:id="@+id/CBDC"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="4dp"
+                        android:text="Sector Jardines del Sur"
+                        android:textSize="20sp"
+                        android:enabled="false"/>
+                    <TextView
+                        android:id="@+id/TvDJardines"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Descargado"
+                        android:textSize="18sp"
+                        android:gravity="left"
+                        android:layout_marginLeft="226dp"/>
+                    <TextView
+                        android:id="@+id/TvNJardines"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No disponible"
+                        android:textSize="18sp"
+                        android:gravity="left"
+                        android:layout_marginLeft="212dp"/>
+                    <LinearLayout
+                        android:id="@+id/LayoutDJardines"
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="204dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:text="Descargar"/>
+                        <Space
+                            android:layout_width="10sp"
+                            android:layout_height="wrap_content" />
+                        <CheckBox
+                            android:id="@+id/CBDJardines"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="4dp"
+                        android:text="Sector Salas"
+                        android:textSize="20sp"
+                        android:enabled="false"/>
+                    <TextView
+                        android:id="@+id/TvDSalas"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Descargado"
+                        android:textSize="18sp"
+                        android:gravity="left"
+                        android:layout_marginLeft="322dp"/>
+                    <TextView
+                        android:id="@+id/TvNSalas"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No disponible"
+                        android:textSize="18sp"
+                        android:gravity="left"
+                        android:layout_marginLeft="308dp"/>
+                    <LinearLayout
+                        android:id="@+id/LayoutDSalas"
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="300dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:text="Descargar"/>
+                        <Space
+                            android:layout_width="10sp"
+                            android:layout_height="wrap_content" />
+                        <CheckBox
+                            android:id="@+id/CBDSalas"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="4dp"
+                        android:text="Sector Santa Barbara"
+                        android:textSize="20sp"
+                        android:enabled="false"/>
+                    <TextView
+                        android:id="@+id/TvDStBarbara"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Descargado"
+                        android:textSize="18sp"
+                        android:gravity="left"
+                        android:layout_marginLeft="244dp"/>
+                    <TextView
+                        android:id="@+id/TvNStBarbara"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No disponible"
+                        android:textSize="18sp"
+                        android:gravity="left"
+                        android:layout_marginLeft="228dp"/>
+                    <LinearLayout
+                        android:id="@+id/LayoutDStBarbara"
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="222dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:text="Descargar"/>
+                        <Space
+                            android:layout_width="10sp"
+                            android:layout_height="wrap_content" />
+                        <CheckBox
+                            android:id="@+id/CBDStBarbara"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="4dp"
+                        android:enabled="false"
+                        android:text="Sector Zaldivar"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/TvDZaldivar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="300dp"
+                        android:gravity="left"
+                        android:text="Descargado"
+                        android:textSize="18sp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/TvNZaldivar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="284dp"
+                        android:gravity="left"
+                        android:text="No disponible"
+                        android:textSize="18sp"
+                        android:visibility="gone" />
+                    <LinearLayout
+                        android:id="@+id/LayoutDZaldivar"
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="276dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:text="Descargar"/>
+                        <Space
+                            android:layout_width="10sp"
+                            android:layout_height="wrap_content" />
+                        <CheckBox
+                            android:id="@+id/CBDZaldivar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp" />
+                <Button
+                    android:id="@+id/BtDescargar"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="Descargar"
+                    android:textSize="15sp" />
+                <Button
+                    android:id="@+id/BtVolver"
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="Volver"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/TV_Estado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/Lorem"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
